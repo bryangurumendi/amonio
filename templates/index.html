@@ -1,0 +1,36 @@
+<h1>REALIZA TU PEDIDO</h1>
+<form method="POST" enctype="multipart/form-data"> {% csrf_token %}
+    <div>
+        <label>
+            Nombre: {{form.nombre}}
+        </label>
+    </div>
+    <div>
+        <label>
+            Apellido: {{form.apellido}}
+        </label>
+    </div>
+    <div>
+        <label>
+            Correo: {{form.correo}}
+        </label>
+    </div>
+    <div>
+        <label>
+            Teléfono: {{form.telefono}}
+        </label>
+    </div>
+    <div>
+        <label>
+            Ciudad: {{form.ciudad}}
+        </label>
+    </div>
+    <div>
+        <label>
+            Sector: {{form.sector}}
+        </label>
+    </div>
+    <div>
+        <button type="submit">GUARDAR</button>
+    </div>
+</form>
